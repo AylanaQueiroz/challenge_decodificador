@@ -1,0 +1,78 @@
+header {
+    background-color: #f3f5fc;
+}
+
+body {
+    background-color: #f3f5fc;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.container {
+    background-color: #f3f5fc;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.text {
+    background-color: #f3f5fc;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    margin-top: 10%;
+}
+
+spam {
+    font-size: 8px;
+    display: block;
+
+
+}
+
+.buttons {
+    margin-top: 90%;
+   
+
+}
+
+.do_button {
+    background-color: #0a3871;
+    color: white;
+    border-radius: 10px;
+    border-color: #0a3871;
+    width: 150px;
+    height: 40px;
+}
+
+.undo_button {
+    background-color: #d8dfe8;
+    color: #3d628f;
+    border-radius: 10px;
+    border-color: #3d628f;
+    width: 150px;
+    height: 40px;
+}
+
+.texto_criptografado {
+
+    border-radius: 10px;
+    background-color: white;
+    height: 550px;
+    padding: 10px;
+}
+
+.img_lupa {
+    width: 60%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.msg_cripto {
+    text-align: center;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+}
