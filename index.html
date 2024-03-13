@@ -20,17 +20,17 @@
     <header> <img class="logo" src="img/cabecalho.png"></header>
     <div class="container">
         <div class="text">
-            <textarea>Digite seu texto</textarea>
+            <input ype="text" id="campo_texto" value="Digite seu texto" onfocus="this.value=' ';">
             <div class="buttons">
                 <spam>Apenasletras minúsculas e sem acento</spam>
                 <button id="do_button" class="do_button">Criptografar</button>
                 <button id="undo_button" class="undo_button">Descriptografar</button>
             </div>
         </div>
-        <div class="texto_criptografado">
+        <div id="texto_criptografado" class="texto_criptografado">
             <img id="img_lupa" class="img_lupa" src="img/msg_img.svg" alt="">
             <h1 id="msg_cripto" class="msg_cripto"> Nenhuma mensagem encontrada</h1>
-            <p id="msg_cripto_2"  class="msg_cripto">Digite uma mensagem que você deseja criptografar</p>
+            <p id="msg_cripto_2" class="msg_cripto">Digite uma mensagem que você deseja criptografar</p>
             <button>Copiar</button>
         </div>
 
