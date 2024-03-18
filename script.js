@@ -3,40 +3,60 @@
 // a ação: imagem ficará com display: none, e o campo texto abaixo da imagem receberá um ''innerHtml'' que mostrará o valor do campo textarea.
 
 
-const campoTexto = document.getElementById('campo_texto')
-const botaoDo = document.getElementById('do_button');
-const botaoUndo = document.getElementById('undo_button');
-const imagemLupa = document.getElementById('img_lupa');
-const campoMensagem = document.getElementById('msg_cripto');
-const campoMensagem2 =  document.getElementById('msg_cripto_2');
 
 
-botaoDo.addEventListener('click', criptografarMsg)
+let campoTexto = document.getElementById('campo_texto')
+let botaoDo = document.getElementById('do_button');
+let botaoUndo = document.getElementById('undo_button');
+let imagemLupa = document.getElementById('img_lupa');
+let campoMensagem = document.getElementById('msg_cripto');
+let campoMensagem2 = document.getElementById('msg_cripto_2');
+var arr = ['a','e','i','o','u'];
 
-function criptografarMsg() {
-   
-  
+
+botaoDo.addEventListener('click', TranscreverMsg)
+
+function TranscreverMsg() {
+
     imagemLupa.style.display = 'none';
     campoMensagem.style.display = 'none';
     campoMensagem2.style.display = 'none';
 
-    const newDiv = document.createElement('div');
-    const newParagraph =  document.createElement('div');
-    newDiv.appendChild(newParagraph)
-    newDiv.innerText = campoTexto.value
-    document.getElementById('texto_criptografado').appendChild(newDiv)
+    let newDiv = document.createElement('div');
+    let newParagraph = document.createElement('div');
+    newDiv.appendChild(newParagraph);
+    newDiv.innerText = campoTexto.value;
+    document.getElementById('texto_criptografado').appendChild(newDiv);
 
+    console.log(arr.includes('a'))
+
+    if (arr.includes('a') == true) {
+
+        console.log ('ai')
+    }
+    
     
 }
 
-// Criar uma função 
+
+
+
+
+
+
+
+
+
+
+// Criar uma função
 // Ligar a função ao botão correspondente no html
-// criar um novo p 
-// add value campoTexto ao novo p criado 
+// criar um novo p
+// add value campoTexto ao novo p criado
 // capturar texto escrito no campo de input do html
 //Desenvolver a lógica da criptografia
 //retornar na tela o resultado do texto criptografado
 
 
+//criar uma função onde quando apertar a tecla 'e' é convertida para 'enter'
 
 
