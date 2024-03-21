@@ -11,7 +11,8 @@ let botaoUndo = document.getElementById('undo_button');
 let imagemLupa = document.getElementById('img_lupa');
 let campoMensagem = document.getElementById('msg_cripto');
 let campoMensagem2 = document.getElementById('msg_cripto_2');
-var arr = ['a','e','i','o','u'];
+let testeMsg = document.getElementById('div_msg');
+let arr = ['a','e','i','o','u']
 
 
 botaoDo.addEventListener('click', TranscreverMsg)
@@ -22,21 +23,77 @@ function TranscreverMsg() {
     campoMensagem.style.display = 'none';
     campoMensagem2.style.display = 'none';
 
-    let newDiv = document.createElement('div');
-    let newParagraph = document.createElement('div');
+    let newDiv = document.createElement('div')
+    let newParagraph = document.createElement('p');
     newDiv.appendChild(newParagraph);
-    newDiv.innerText = campoTexto.value;
-    document.getElementById('texto_criptografado').appendChild(newDiv);
+    testeMsg.appendChild(newDiv);
+    testeMsg.innerText = campoTexto.value;
+    
 
-    console.log(arr.includes('a'))
 
-    if (arr.includes('a') == true) {
+
+    /*console.log(arr.includes('a'))
+
+    if (texto_criptografado.includes('a') == true) {
 
         console.log ('ai')
     }
-    
-    
+    */
+
 }
+
+
+/*
+function codificarMsg2() {
+
+   // let testeMsg1 = testeMsg;
+    // testeMsg.includes = ["Mango"];
+
+    
+       // console.log(testeMsg1.includes("Mango"))
+
+      
+        //let result = text.replace("i", "--");
+        console.log(testeMsg)  
+        
+        if (testeMsg == 'a'){
+            alert('a funcionando')
+        }
+    
+}*/
+
+
+
+
+
+
+function codificarMsg() {
+    let text = "";
+   
+  console.log(campoTexto.value);
+  console.log(typeof campoTexto.value)
+/*
+  text = campoTexto.value.replace(/a/gi,"ai");
+  text = campoTexto.value.replaceAll('e','enter');
+  text = campoTexto.value.replaceAll('i','imes');
+*/
+
+  var texto = campoTexto.value;
+ // var resultado = texto.sub(r"[aeiou]", texto, "")
+ var resultado = texto.replace(/\a+/g,'ai').replace(/\e+/g,'enter').replace(/\i+/g,'imes').replace(/\o+/g,'ober').replace(/\u+/g,'ufat')
+ 
+
+
+  //console.log(campoTexto.value.replaceAll('a','e'))
+ 
+  
+ console.log (resultado)  
+
+}
+
+
+  
+
 
 
 
