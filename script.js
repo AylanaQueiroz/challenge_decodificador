@@ -12,12 +12,11 @@ let imagemLupa = document.getElementById('img_lupa');
 let campoMensagem = document.getElementById('msg_cripto');
 let campoMensagem2 = document.getElementById('msg_cripto_2');
 let testeMsg = document.getElementById('div_msg');
-let arr = ['a','e','i','o','u']
 
 
-botaoDo.addEventListener('click', TranscreverMsg)
+botaoDo.addEventListener('click', criptografar)
 
-function TranscreverMsg() {
+function criptografar() {
 
     imagemLupa.style.display = 'none';
     campoMensagem.style.display = 'none';
@@ -28,71 +27,29 @@ function TranscreverMsg() {
     newDiv.appendChild(newParagraph);
     testeMsg.appendChild(newDiv);
     testeMsg.innerText = campoTexto.value;
-    
-
-
-
-    /*console.log(arr.includes('a'))
-
-    if (texto_criptografado.includes('a') == true) {
-
-        console.log ('ai')
-    }
-    */
+  
+    let msgmInput = campoTexto.value;
+    let msgCriptografada = msgmInput.replace(/\a+/g, 'ai').replace(/\e+/g, 'enter').replace(/\i+/g, 'imes').replace(/\o+/g, 'ober').replace(/\u+/g, 'ufat')
+    testeMsg.innerText = msgCriptografada
 
 }
 
-
-/*
-function codificarMsg2() {
-
-   // let testeMsg1 = testeMsg;
-    // testeMsg.includes = ["Mango"];
-
-    
-       // console.log(testeMsg1.includes("Mango"))
-
-      
-        //let result = text.replace("i", "--");
-        console.log(testeMsg)  
-        
-        if (testeMsg == 'a'){
-            alert('a funcionando')
-        }
-    
-}*/
-
-
-
-
-
-
-function codificarMsg() {
+function descriptografar() {
     let text = "";
-   
-  console.log(campoTexto.value);
-  console.log(typeof campoTexto.value)
-/*
-  text = campoTexto.value.replace(/a/gi,"ai");
-  text = campoTexto.value.replaceAll('e','enter');
-  text = campoTexto.value.replaceAll('i','imes');
-*/
 
-  var texto = campoTexto.value;
- // var resultado = texto.sub(r"[aeiou]", texto, "")
- var resultado = texto.replace(/\a+/g,'ai').replace(/\e+/g,'enter').replace(/\i+/g,'imes').replace(/\o+/g,'ober').replace(/\u+/g,'ufat')
- 
+    console.log(campoTexto.value);
+    console.log(typeof campoTexto.value)
 
 
-  //console.log(campoTexto.value.replaceAll('a','e'))
- 
-  
- console.log (resultado)  
+    var texto = campoTexto.value;
+    texto1 = texto.toLowerCase()
+    var resultado = texto1.replace(/\a+/g, 'ai').replace(/\e+/g, 'enter').replace(/\i+/g, 'imes').replace(/\o+/g, 'ober').replace(/\u+/g, 'ufat')
+    console.log(resultado)
 
 }
 
 
-  
+
 
 
 
