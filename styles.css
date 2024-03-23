@@ -14,8 +14,6 @@ body {
     background-color: #f3f5fc;
     display: flex;
     justify-content: space-around;
-   
-    
 }
 
 .text {
@@ -23,21 +21,23 @@ body {
     color: #0A3871;
     font-family: "Inter", sans-serif;
     font-size: 32px;
-    margin-top: 10%;
-    
+}
+
+#campo_texto {
+    border: none;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    background-color: #f3f5fc;
+    font-size: 32px;
 }
 
 spam {
     font-size: 8px;
     display: block;
-
-
 }
 
 .buttons {
     margin-top: 90%;
-   
-
 }
 
 .do_button {
@@ -59,13 +59,15 @@ spam {
 }
 
 .texto_criptografado {
-
     border-radius: 10px;
     background-color: white;
     height: 550px;
     padding: 10px;
-    width: 500px;
-   
+    width: 400px;
+}
+
+.msg_side {
+    text-align: center;
 }
 
 .img_lupa {
@@ -79,4 +81,31 @@ spam {
     text-align: center;
     color: #0A3871;
     font-family: "Inter", sans-serif;
+}
+
+#msg_cripto {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.copy_button_end {
+    text-align: center;
+   
+}
+
+.copy_button {
+    background-color: white;
+    color: #3d628f;
+    border-radius: 10px;
+    border-color: #3d628f;
+    width: 150px;
+    height: 40px; 
+    margin-top: 20px;
+}
+
+.div_msg {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
 }
