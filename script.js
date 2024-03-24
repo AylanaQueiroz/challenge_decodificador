@@ -34,20 +34,13 @@ function criptografar() {
     testeMsg.innerText = msgCriptografada;
 
 
-    botaoCopy.addEventListener('click', copy)
+    botaoCopy.addEventListener('click', copyMsgCripto)
 
-    function copyMsgCriptografada() {
+    function copyMsgCripto() {
         var copyText = campoTexto.value;
-        
-    
         navigator.clipboard.writeText(msgCriptografada)
-    
         console.log(msgCriptografada)
-    
     }
-
-
-
 }
 
 function descriptografar() {
@@ -61,7 +54,15 @@ function descriptografar() {
     var resultado = texto1.replace(/\ai+/g, 'a').replace(/\enter+/g, 'e').replace(/\imes+/g, 'i').replace(/\ober+/g, 'o').replace(/\ufat+/g, 'u')
     testeMsg.innerText = resultado
 
+
+    botaoCopy.addEventListener('click', copyMsgDescripto)
+
+    function copyMsgDescripto() {
+        var copyteste = campoTexto.value;
+        navigator.clipboard.writeText(copyteste)
+    }
 }
+
 
 
 
