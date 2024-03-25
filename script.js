@@ -15,6 +15,7 @@ let testeMsg = document.getElementById('div_msg');
 let botaoCopy = document.getElementById('tcpy');
 
 
+
 botaoDo.addEventListener('click', criptografar)
 
 function criptografar() {
@@ -30,8 +31,26 @@ function criptografar() {
     testeMsg.appendChild(newDiv);
     testeMsg.innerText = campoTexto.value;
     let msgmInput = campoTexto.value;
-    let msgCriptografada = msgmInput.replace(/\a+/g, 'ai').replace(/\e+/g, 'enter').replace(/\i+/g, 'imes').replace(/\o+/g, 'ober').replace(/\u+/g, 'ufat')
-    testeMsg.innerText = msgCriptografada;
+    let arrayMsg = msgmInput.split(' ');
+
+
+
+
+
+
+
+    // let msgCriptografada = msgmInput.replace(/\a+/g, 'ai').replace(/\e+/g, 'enter').replace(/\i+/g, 'imes').replace(/\o+/g, 'ober').replace(/\u+/g, 'ufat')
+    //testeMsg.innerText = msgCriptografada;
+
+
+
+
+
+
+
+
+
+
 
 
     botaoCopy.addEventListener('click', copyMsgCripto)
@@ -64,6 +83,42 @@ function descriptografar() {
 }
 
 
+/*let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
+
+let criptografadas = ['ai', 'enter', 'imes', 'ober', 'ufat']
+
+
+let resultadoArray = arrayVogal.splice(0, 5, 'ai', 'enter', 'imes', 'ober', 'ufat')
+
+console.log('resultado do arrayVogal:' + arrayVogal)
+
+
+
+console.log('testando' + arrayVogal[1])
+
+
+let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
+
+    let criptografadas = ['ai', 'enter', 'imes', 'ober', 'ufat']
+
+
+    let resultadoArray = arrayVogal.splice(0, 5, 'ai', 'enter', 'imes', 'ober', 'ufat');
+
+    console.log('testando' +arrayVogal )
+
+    for (var j=0; j<arrayVogal.length; j++) {
+        
+        
+        document.write(arrayVogal[1] +'<br>')
+    }
+
+   console.log( 'testando' + msgmInput)
+
+
+
+     (arrayVogal[0] == 'a') {
+        arrayVogal[0].replace(/\a+/g, 'ai')
+     }
 
 
 
@@ -71,7 +126,7 @@ function descriptografar() {
 
 
 
-
+*/
 
 
 
@@ -88,3 +143,25 @@ function descriptografar() {
 //criar uma função onde quando apertar a tecla 'e' é convertida para 'enter'
 
 
+const numbers = [1,4,5,9,14,23]
+
+   function doubleNumber (num) {
+    return num*2
+   }
+    const doubleNumbers = numbers.map(doubleNumber)
+
+    console.log (doubleNumbers)
+
+
+    const leters = ['a','e']
+
+   function changeletters (let) {
+    return  let.replace(/\a+/g, 'ai')
+   
+  
+   
+
+   }
+    const changeLetters = leters.map(changeletters)
+
+    console.log (changeLetters)
