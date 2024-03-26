@@ -13,6 +13,7 @@ let campoMensagem = document.getElementById('msg_cripto');
 let campoMensagem2 = document.getElementById('msg_cripto_2');
 let testeMsg = document.getElementById('div_msg');
 let botaoCopy = document.getElementById('tcpy');
+let msgmInput = campoTexto.value;
 
 
 
@@ -30,14 +31,51 @@ function criptografar() {
     newDiv.appendChild(newParagraph);
     testeMsg.appendChild(newDiv);
     testeMsg.innerText = campoTexto.value;
-    let msgmInput = campoTexto.value;
-    let arrayMsg = msgmInput.split(' ');
+    let msgmInput = campoTexto.value; // msgmInput = typeof String
+    let arrayNovo =  msgmInput.split('');
+   
+    console.log(arrayNovo)
+    let f = arrayNovo.length
+   /* 
+    console.log ( f )
+    for ( let i=0; i<f; i++) {
+        let novo2 = arrayNovo[i].replace(/\e+/g, 'enter')
+        console.log(novo2)
+    }
+   */ 
+    var str = "I have a cat, a dog, and a goat.";
+    var mapObj = {
+
+        a:"ai",
+        e:"enter",
+        i:"imes",
+        o:"ober",
+        u:"ufat"
+    };
+    ff = campoTexto.value.replace(/a|e|i|o|u/gi, matched => mapObj[matched]);
+    console.log(ff);
+    /*var myArray = [123, 15, 187, 32];
+
+    arrayNovo.forEach(function (value, i) {
+    console.log( i,  value.replace(/\e+/g, 'enter').replace(/\i+/g, 'imes').replace(/\o+/g, 'ober').replace(/\u+/g, 'ufat'));
+    console.log(i, value.replace(/\a+/g, 'ai'))
+    //console.log(teste1)
+    });
+   */
 
 
 
+let criptografadas = ['ai', 'enter', 'imes', 'ober', 'ufat']
+    let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
+            
+    let resultadoArray = arrayNovo.splice(0, 5, 'ai', 'enter', 'imes', 'ober', 'ufat')
+    
+    console.log('resultado do arrayNovo:' + arrayNovo)
 
+ 
 
-
+    
+ }
 
     // let msgCriptografada = msgmInput.replace(/\a+/g, 'ai').replace(/\e+/g, 'enter').replace(/\i+/g, 'imes').replace(/\o+/g, 'ober').replace(/\u+/g, 'ufat')
     //testeMsg.innerText = msgCriptografada;
@@ -60,7 +98,7 @@ function criptografar() {
         navigator.clipboard.writeText(msgCriptografada)
         console.log(msgCriptografada)
     }
-}
+
 
 function descriptografar() {
     imagemLupa.style.visibility = 'hidden';
@@ -82,13 +120,13 @@ function descriptografar() {
     }
 }
 
-
-/*let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
+/*
+let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
 
 let criptografadas = ['ai', 'enter', 'imes', 'ober', 'ufat']
 
 
-let resultadoArray = arrayVogal.splice(0, 5, 'ai', 'enter', 'imes', 'ober', 'ufat')
+let resultadoArray = arrayVogal.splice(0, 10, 'ai', 'enter', 'imes', 'ober', 'ufat')
 
 console.log('resultado do arrayVogal:' + arrayVogal)
 
@@ -106,7 +144,7 @@ let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
 
     console.log('testando' +arrayVogal )
 
-    for (var j=0; j<arrayVogal.length; j++) {
+    for (var cont=0; cont<msgmInput.lenght; cont++ ) {
         
         
         document.write(arrayVogal[1] +'<br>')
@@ -115,7 +153,7 @@ let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
    console.log( 'testando' + msgmInput)
 
 
-
+/*
      (arrayVogal[0] == 'a') {
         arrayVogal[0].replace(/\a+/g, 'ai')
      }
@@ -126,7 +164,7 @@ let arrayVogal = ['a', 'e', 'i', 'o', 'u'];
 
 
 
-*/
+
 
 
 
@@ -164,4 +202,6 @@ const numbers = [1,4,5,9,14,23]
    }
     const changeLetters = leters.map(changeletters)
 
-    console.log (changeLetters)
+    console.log (changeLetters)*/
+
+    
