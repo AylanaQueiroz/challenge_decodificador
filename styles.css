@@ -1,46 +1,56 @@
 header {
+
     background-color: #f3f5fc;
 }
 
 body {
+
     background-color: #f3f5fc;
 }
 
 .logo {
-    margin-top: 10px;
+
+    margin-top: 30px;
 }
 
 .container {
+
     background-color: #f3f5fc;
     display: flex;
     justify-content: space-around;
 }
 
 .text {
+
     background-color: #f3f5fc;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 32px;
+    font-size: 32px; 
 }
 
 #campo_texto {
+
     border: none;
     color: #0A3871;
     font-family: "Inter", sans-serif;
     background-color: #f3f5fc;
     font-size: 32px;
+    margin-top: 30%;
 }
 
 spam {
+
     font-size: 8px;
     display: block;
 }
 
 .buttons {
-    margin-top: 90%;
+
+    margin-top: 150%;
 }
 
 .do_button {
+
     background-color: #0a3871;
     color: white;
     border-radius: 10px;
@@ -50,6 +60,7 @@ spam {
 }
 
 .undo_button {
+
     background-color: #d8dfe8;
     color: #3d628f;
     border-radius: 10px;
@@ -59,18 +70,21 @@ spam {
 }
 
 .texto_criptografado {
+
     border-radius: 10px;
     background-color: white;
-    height: 550px;
+    height: 944px;
     padding: 10px;
     width: 400px;
 }
 
 .msg_side {
+    
     text-align: center;
 }
 
 .img_lupa {
+
     width: 60%;
     height: 60%;
     margin-top: 10%;
@@ -78,22 +92,27 @@ spam {
 }
 
 .msg_cripto {
+
     text-align: center;
     color: #0A3871;
     font-family: "Inter", sans-serif;
 }
 
 #msg_cripto {
+
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .copy_button_end {
+
     text-align: center;
+    margin-top: 100%;
    
 }
 
 .copy_button {
+
     background-color: white;
     color: #3d628f;
     border-radius: 10px;
@@ -104,6 +123,7 @@ spam {
 }
 
 .div_msg {
+
     font-family: "Inter", sans-serif;
     font-size: 30px;
     height: 100px;
