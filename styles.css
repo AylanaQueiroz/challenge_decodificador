@@ -29,7 +29,7 @@ header {
     background-color: #f3f5fc;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 32px; 
+    font-size: 32px;
 
 }
 
@@ -85,14 +85,14 @@ spam {
 
     border-radius: 10px;
     background-color: white;
-    height: 944px;
+    height: 844px;
     padding: 10px;
     width: 400px;
 
 }
 
 .msg_side {
-    
+
     text-align: center;
 
 }
@@ -125,8 +125,7 @@ spam {
 
     text-align: center;
     margin-top: 100%;
-    
-   
+
 }
 
 .div_msg {
@@ -135,7 +134,7 @@ spam {
     font-size: 30px;
     height: 100px;
     text-align: center;
-    
+
 }
 
 .copy_button {
@@ -145,10 +144,8 @@ spam {
     border-radius: 10px;
     border-color: #3d628f;
     width: 150px;
-    height: 40px; 
-    margin-top: 20px;
+    height: 40px;
     font-size: 16px;
     font-family: "Inter", sans-serif;
 
 }
-
