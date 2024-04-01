@@ -1,16 +1,19 @@
-header {
-
-    background-color: #f3f5fc;
-}
-
 body {
 
     background-color: #f3f5fc;
+
+}
+
+header {
+
+    background-color: #f3f5fc;
+
 }
 
 .logo {
 
     margin-top: 30px;
+
 }
 
 .container {
@@ -18,6 +21,7 @@ body {
     background-color: #f3f5fc;
     display: flex;
     justify-content: space-around;
+
 }
 
 .text {
@@ -25,7 +29,8 @@ body {
     background-color: #f3f5fc;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 32px; 
+    font-size: 32px;
+
 }
 
 #campo_texto {
@@ -36,17 +41,20 @@ body {
     background-color: #f3f5fc;
     font-size: 32px;
     margin-top: 30%;
+
+}
+
+.buttons {
+
+    margin-top: 150%;
+
 }
 
 spam {
 
     font-size: 8px;
     display: block;
-}
 
-.buttons {
-
-    margin-top: 150%;
 }
 
 .do_button {
@@ -55,8 +63,8 @@ spam {
     color: white;
     border-radius: 10px;
     border-color: #0a3871;
-    width: 150px;
     height: 40px;
+
 }
 
 .undo_button {
@@ -65,8 +73,8 @@ spam {
     color: #3d628f;
     border-radius: 10px;
     border-color: #3d628f;
-    width: 150px;
     height: 40px;
+
 }
 
 .texto_criptografado {
@@ -76,11 +84,13 @@ spam {
     height: 944px;
     padding: 10px;
     width: 400px;
+
 }
 
 .msg_side {
-    
+
     text-align: center;
+
 }
 
 .img_lupa {
@@ -89,6 +99,7 @@ spam {
     height: 60%;
     margin-top: 10%;
     margin-left: 15%;
+
 }
 
 .msg_cripto {
@@ -96,19 +107,30 @@ spam {
     text-align: center;
     color: #0A3871;
     font-family: "Inter", sans-serif;
+
 }
 
 #msg_cripto {
 
     font-weight: bold;
     margin-bottom: 10px;
+
 }
 
 .copy_button_end {
 
     text-align: center;
     margin-top: 100%;
-   
+
+}
+
+.div_msg {
+
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
+
 }
 
 .copy_button {
@@ -118,14 +140,7 @@ spam {
     border-radius: 10px;
     border-color: #3d628f;
     width: 150px;
-    height: 40px; 
+    height: 40px;
     margin-top: 20px;
-}
 
-.div_msg {
-
-    font-family: "Inter", sans-serif;
-    font-size: 30px;
-    height: 100px;
-    text-align: center;
 }

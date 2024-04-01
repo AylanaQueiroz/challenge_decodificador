@@ -78,15 +78,6 @@ function criptografar() {
 
         }
     }
-
-
-
-
-
-
-
-
-
 }
 
 
