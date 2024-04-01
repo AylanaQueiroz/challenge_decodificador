@@ -111,20 +111,24 @@ spam {
     text-align: center;
     color: #0A3871;
     font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
 
 }
 
-#msg_cripto {
+.msg_cripto_2 {
 
-    font-weight: bold;
-    margin-bottom: 10px;
+    text-align: center;
+    color: #0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
 
 }
 
 .copy_button_end {
 
     text-align: center;
-    margin-top: 100%;
+    margin-top: 80%;
 
 }
 
