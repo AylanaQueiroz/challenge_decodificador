@@ -4,23 +4,20 @@ body {
 
 }
 
-header {
+.container {
 
     background-color: #f3f5fc;
+    display: flex;
 
 }
 
 .logo {
 
-    margin-top: 30px;
-
-}
-
-.container {
-
-    background-color: #f3f5fc;
-    display: flex;
-    justify-content: space-around;
+   width: 120px;
+   height: 48px;
+   margin-top:40px;
+   margin-left: 40px;
+   gap:40px;
 
 }
 
@@ -29,7 +26,7 @@ header {
     background-color: #f3f5fc;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 32px;
+    font-size: 2rem; 
 
 }
 
@@ -46,13 +43,12 @@ header {
 
 .buttons {
 
-    margin-top: 140%;
-
+    margin-top: 585px;
 }
 
 spam {
 
-    font-size: 8px;
+    font-size: 0.5rem;
     display: block;
 
 }
@@ -61,11 +57,13 @@ spam {
 
     background-color: #0a3871;
     color: white;
-    border-radius: 10px;
+    border-radius: 24px;
     border-color: #0a3871;
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    font-size: 1rem;
+    gap: 8px;
+    padding: 24px;   
 
 }
 
@@ -73,22 +71,24 @@ spam {
 
     background-color: #d8dfe8;
     color: #3d628f;
-    border-radius: 10px;
+    border-radius: 24px;
     border-color: #3d628f;
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    font-size: 1rem;
+    gap: 8px;
 
 }
 
 .texto_criptografado {
-
-    border-radius: 10px;
+    display: flex;
+    margin-top: 40px;
+    margin-left:600px;
+    border-radius: 32px;
     background-color: white;
-    height: 844px;
-    padding: 10px;
+    height: 944px;
     width: 400px;
-
+   
 }
 
 .msg_side {
@@ -111,7 +111,7 @@ spam {
     text-align: center;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 
 }
@@ -121,21 +121,21 @@ spam {
     text-align: center;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 
 .copy_button_end {
 
     text-align: center;
-    margin-top: 80%;
+    margin-top: 585px;
 
 }
 
 .div_msg {
 
     font-family: "Inter", sans-serif;
-    font-size: 30px;
+    font-size: 1.9rem;
     height: 100px;
     text-align: center;
 
@@ -145,11 +145,29 @@ spam {
 
     background-color: white;
     color: #3d628f;
-    border-radius: 10px;
+    border-radius: 24px;
     border-color: #3d628f;
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
+    width: 328px;
+    height: 67px;
+    gap: 8px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
+    margin-top: 140px;
+
+}
+
+
+
+@media (max-width:768px) {
+
+    .texto_criptografado {
+        background-color:red;
+
+        
+    }
+
+    .img_lupa {
+        display: none;
+    }
 
 }
