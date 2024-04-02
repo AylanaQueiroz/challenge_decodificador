@@ -8,7 +8,7 @@ body {
 
     background-color: #f3f5fc;
     display: flex;
-
+    justify-content: space-around
 }
 
 .logo {
@@ -43,7 +43,7 @@ body {
 
 .buttons {
 
-    margin-top: 585px;
+    margin-top:500px
 }
 
 spam {
@@ -83,10 +83,9 @@ spam {
 .texto_criptografado {
     display: flex;
     margin-top: 40px;
-    margin-left:600px;
     border-radius: 32px;
     background-color: white;
-    height: 944px;
+    height: 844px;
     width: 400px;
    
 }
@@ -128,7 +127,7 @@ spam {
 .copy_button_end {
 
     text-align: center;
-    margin-top: 585px;
+    margin-top: 5%
 
 }
 
@@ -152,7 +151,7 @@ spam {
     gap: 8px;
     font-size: 1rem;
     font-family: "Inter", sans-serif;
-    margin-top: 140px;
+   
 
 }
 
@@ -167,7 +166,8 @@ spam {
     }
 
     .img_lupa {
-        display: none;
+
+        visibility: hidden;
     }
 
 }
