@@ -13,11 +13,11 @@ body {
 
 .logo {
 
-   width: 120px;
-   height: 48px;
-   margin-top:40px;
-   margin-left: 40px;
-   gap:40px;
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40px;
+    gap: 40px;
 
 }
 
@@ -26,7 +26,7 @@ body {
     background-color: #f3f5fc;
     color: #0A3871;
     font-family: "Inter", sans-serif;
-    font-size: 2rem; 
+    font-size: 2rem;
 
 }
 
@@ -43,7 +43,7 @@ body {
 
 .buttons {
 
-    margin-top:500px
+    margin-top: 500px;
 }
 
 spam {
@@ -63,7 +63,7 @@ spam {
     height: 67px;
     font-size: 1rem;
     gap: 8px;
-    padding: 24px;   
+    padding: 24px;
 
 }
 
@@ -81,18 +81,19 @@ spam {
 }
 
 .texto_criptografado {
-    display: flex;
+
     margin-top: 40px;
     border-radius: 32px;
     background-color: white;
     height: 844px;
     width: 400px;
-   
+
 }
 
 .msg_side {
 
     text-align: center;
+
 
 }
 
@@ -127,8 +128,7 @@ spam {
 .copy_button_end {
 
     text-align: center;
-    margin-top: 5%
-
+    margin-top: 75%
 }
 
 .div_msg {
@@ -151,7 +151,6 @@ spam {
     gap: 8px;
     font-size: 1rem;
     font-family: "Inter", sans-serif;
-   
 
 }
 
@@ -159,15 +158,46 @@ spam {
 
 @media (max-width:768px) {
 
-    .texto_criptografado {
-        background-color:red;
 
-        
+    .container {
+
+        display: block;
+
+    }
+
+    .text {
+
+        margin-left: 40px;
+
+    }
+
+    .texto_criptografado {
+
+        height: 343px;
+        width: 688px;
+        border-radius: 32px;
+        margin-left: 40px;
+
+    }
+
+    .msg_side {
+
+        padding-top: 30px;
+
     }
 
     .img_lupa {
 
-        visibility: hidden;
+        display: none;
+
     }
 
+    .copy_button_end {
+
+        margin-top: 10%;
+        width: 628px;
+        height: 67px;
+        border-radius: 24px;
+        
+    }
 }
