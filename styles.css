@@ -44,6 +44,8 @@ body {
 .buttons {
 
     margin-top: 500px;
+
+
 }
 
 spam {
@@ -65,6 +67,7 @@ spam {
     gap: 8px;
     padding: 24px;
 
+
 }
 
 .undo_button {
@@ -77,6 +80,7 @@ spam {
     height: 67px;
     font-size: 1rem;
     gap: 8px;
+
 
 }
 
@@ -95,7 +99,6 @@ spam {
 .msg_side {
 
     text-align: center;
-
 
 }
 
@@ -171,8 +174,10 @@ spam {
 }*/
 
 
+
 @media (max-width:768px) {
 
+   
 
     .container {
 
@@ -180,19 +185,35 @@ spam {
 
     }
 
-    .text {
-
+    .logo {
         margin-left: 40px;
+    }
+
+
+    .buttons {
+
+        width: 688px;
+        margin-left: 10px;
+    }
+
+    .do_button {
+
+        width: 280px;
+
+    }
+
+    .undo_button {
+
+        width: 280px;
 
     }
 
     .texto_criptografado {
-
+        margin-left: 20px;
         height: 343px;
-        width: 688px;
-        border-radius: 32px;
-        margin-left: 40px;
-
+        width: 610px;
+        margin-left: 5px
+      
     }
 
     .msg_side {
@@ -222,7 +243,7 @@ spam {
 
 
     .text {
-      
+       
         font-size: 32px;
 
     }
@@ -238,11 +259,12 @@ spam {
 
         border-radius: 24px;
         margin-bottom: 20px;
+        display: block;
 
     }
 
     .undo_button {
-
+        display: block;
         border-radius: 24px;
 
     }
@@ -251,16 +273,16 @@ spam {
 
         font-size: 16px;
         width: 327px;
-        margin-left: 40px;
+        margin-left: 5px;
 
     }
 
     .copy_button_end {
 
-      width: 279px;
-      border-radius: 24px;
-      height: 67px;
-      gap: 8px;
+        width: 279px;
+        border-radius: 24px;
+        height: 67px;
+        gap: 8px;
 
     }
 
